@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="RED ALPHA – MHMD MUKARRAM" />
+        <meta property="og:description" content="Created By Red Alpha" />
+	<title>Red Alpha</title>
+	<link rel="icon" href="img/red alpha logo.png">
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--boxicons  -->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+	<!-- Navbar Section Start-->
+ 
+	<header>
+		<a href="#" class="logo"><span>ALPHA</span>.</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#members">Members Login</a></li>
+			<li><a href="#portfolio">My Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+
+	<!-- Navbar Section End-->
+	<!-- Home Section Start-->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h4>Hey</h4>
+			<h1>I'm</h1>
+	<!--Typing HTML and JS Start-->
+			<div class="container">
+				<span class="text first-text"></span>
+				<span class="text sec-text"></span>
+			</div>
+			<script>
+				 const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+	setTimeout(() => {
+		text.textContent = "Mukarram";
+	}, 0);
+	setTimeout(() => {
+		text.textContent = "Red Alpha";
+	}, 4000); //1s = 1000 milliseconds
+}
+
+textLoad();
+setInterval(textLoad, 8000);
+			</script>
+	<!--Typin HTML and JS End-->
+			<a href="https://chat.whatsapp.com/Jx7f5x3wSU7D8a9ntdFB3j" class="btn">WA Group</a>
+			<a onclick="wapp()"; class="btn">Web Apps</a>
+		</div>
+	</section>
+	<!-- Home Section End-->
+
+	<!--Clock HTML and JS Start-->
+	<body>
+		<div class="clock">
+		  <div class="display">
+	</div>
+	</div>
+	<script>
+		  setInterval(function(){
+			const clock = document.querySelector(".display");
+			let time = new Date();
+			let sec = time.getSeconds();
+			let min = time.getMinutes();
+			let hr = time.getHours();
+			let day = 'AM';
+			if(hr > 12){
+			  day = 'PM';
+			  hr = hr - 12;
+			}
+			if(hr == 0){
+			  hr = 12;
+			}
+			if(sec < 10){
+			  sec = '0' + sec;
+			}
+			if(min < 10){
+			  min = '0' + min;
+			}
+			if(hr < 10){
+			  hr = '0' + hr;
+			}
+			clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+		  });
+		</script>
+	<!--Clock HTML and Js End-->
+
+	<!-- About Section Start-->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/mhmd mukarram.png" alt="">
+
+		</div>
+		<div class="about-content">
+			<h2>About Me</h2>
+			<h4>Welcome to my website! </h4>
+			<p>I'm Mukarram, a student of the commerce section in St.Sylvesters College Kandy. However, I have dedicated my time and effort to learning programming skills and technology.<br><br>I created this portfolio website to showcase my programming abilities while highlighting the unique blend of skills I bring as a commerce student. I am excited about the intersection of these two fields and the potential it holds for innovation and growth.<br><br>Thank you for visiting my website. I have attached some of my works below. Take a look at them, and I have also included some web games that I have coded. Feel free to play them and enjoy! Don't forget to follow me on social media. If you want any help ask from me, I'm here to help in your next project.</p>
+			<a href="https://wa.me/94740979220" class="btn">Contact Me</a>
+		</div>
+
+	</section>
+	<!-- About Section End-->
+
+	<!-- Services Section Start-->
+	<section class="services" id="services">
+		<div class="heading">
+			<h2>My Services</h2>
+			<h4>Better Expericences</h4>
+
+		</div>
+		<div class="services-content">
+			<div class="box">
+				<a href="Typing Game/TG.html"><img src="img/serv1.png" alt="">
+				<h3>Speed Typing Game</h3>
+				<p>Keyboarding has become a necessary skill for education and most careers. It has even become an integral part of social relationships, helping to support email, social media, and other forms of communication.Then you need to incrice your typing skill.<br>Tap to Play</p>
+			</div></a>
+
+				</div>
+		<div class="services-content">
+			<div class="box">
+				<a href="type-shooting/index.html"><img src="img/serv1.png" alt="">
+				<h3>Type Shooting Game</h3>
+				<p>Keyboarding has become a necessary skill for education and most careers. It has even become an integral part of social relationships, helping to support email, social media, and other forms of communication.Then you need to incrice your typing skill.<br>Tap to Play</p>
+			</div></a>
+			
+			<!--<div class="box">
+				<img src="img/serv2.png" alt="">
+				<h3>Web App Development</h3>
+				<p>The company itself is a very successful company. But do we accuse those who praise the right architect of rejecting the laborious work, in any case, but do the services result in reason?</p>
+			</div>
+			<div class="box">
+				<img src="img/serv3.png" alt="">
+				<h3>Video Editing</h3>
+				<p>The company itself is a very successful company. But do we accuse those who praise the right architect of rejecting the laborious work, in any case, but do the services result in reason?</p>
+			</div>
+		</div>-->
+
+	</section>
+	<!-- Services Section End -->
+	
+	<!-- Members Login Section Start -->
+	<section class="members" id="members">
+	  <p class="memt">This Button Only For Alpha Team Members</p>
+	  <a href="member.html" class="btn">Login</a>
+	</section>
+	<!-- Members Login Section End -->
+
+
+	<!-- Portfolio Section start -->
+	<section class="portfolio" id="portfolio">
+		<div class="heading">
+			<h2>My Portfolio</h2>
+			<h4>Some Of My Works</h4>
+
+		</div>
+		<div class="portfolio-content">
+			<div class="port">
+				<img src="img/port1.jpg" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3 onclick="clz()";>A Tution Class Website</h3>
+			</div>
+			<div class="port">
+				<img src="" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3>Comming Soon</h3>
+			</div>
+			<div class="port">
+				<img src="" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3>Comming Soon</h3>
+			</div>
+			<div class="port">
+				<img src="" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3>Comming Soon</h3>
+			</div>
+			<div class="port">
+				<img src="" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3>Comming Soon</h3>
+			</div>
+			<div class="port">
+				<img src="" alt="">
+				<div class="main-box">
+					<div class="box-text">
+						<h5>Development</h5>
+					</div>
+					<div class="box-icon">
+						<i class="bx bx-heart"></i>
+					</div>
+				</div>
+				<h3>Comming Soon</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section End -->
+
+
+	<!-- Contact Section Start -->
+	<section id="contact" class="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Contact With Me Any Time</h4>
+			<p>Thank you for visiting my website.If you enjoy the games give me a feedback.</p>
+			<div class="contact-list">
+				<li>Kandy, Sri Lanka</li>
+				<li>mhmdmukarram200@gmail.com</li>
+				<li>+94740979220</li>
+			</div>
+			<div class="social-icons">
+				<a href="https://lk.linkedin.com/in/mhmd-mukarram"><i class="bx bxl-linkedin"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100073036603801&mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
+				<a href="https://www.instagram.com/mukarrammhmd"><i class="bx bxl-instagram"></i></a>
+				<a href="https://www.youtube.com/@redalpham"><i class="bx bxl-youtube"></i></a>
+				<a href="https://github.com/MhmdMukarram"><i class="bx bxl-github"></i></a>
+				<a href="https://www.pinterest.com/mhmdmukarram"><i class="bx bxl-pinterest"></i></a>
+				<a href="https://twitter.com/Alpha_Mukarram"><i class="bx bxl-twitter"></i></a>
+				<a href="https://tiktok.com/@mhmd__mukarram"><i class="bx bxl-tiktok"></i></a>
+			</div>
+		</div>
+		<div class="contact-form">
+			<form>
+				<input type="text" placeholder="Your Name">
+				<input type="email" placeholder="Your Email">
+				<input type="text" placeholder="Enter Your Subject">
+				<textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message">
+
+				 </textarea>
+				<input type="submit" value="Submit" class="send">
+
+			</form>
+		</div>
+	</section>
+
+	<!-- Contact Section End -->
+	<div class="hr"></div>
+	<div class="copyright">
+		<div class="links">
+			<a href="#"><span>Home</span></a>
+			<a href="https://wa.me/94740979220"><span>Contact Me</span></a>
+			<a href="#"><span>Terms & Condition</span></a>
+			<a href="#"><span>Privacy Policy</span></a>
+
+	<!---custom js link--->
+	<script src="script.js"></script>
+        <script>
+	//Link Changer//	
+    window.history.pushState({}, '', '/?Home=without+login');
+
+	function wapp() {
+		location = "webapp.html"
+	}
+	</script>
+	
+</body>
+
+</html>
